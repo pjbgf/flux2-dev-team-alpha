@@ -81,6 +81,12 @@ NAME              TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)             
 service/podinfo   ClusterIP   10.96.172.143   <none>        9898/TCP,9999/TCP   52m
 ```
 
+```shell
+$ kubectl get HelmRelease -A
+NAMESPACE           NAME      READY   STATUS                             AGE
+dev-team-alpha-ns   podinfo   True    Release reconciliation succeeded   65m
+```
+
 For more information, refer to the [hnc multi-tenant repo].
 
 [Hierarchical Namespaces]: https://github.com/kubernetes-sigs/hierarchical-namespaces
